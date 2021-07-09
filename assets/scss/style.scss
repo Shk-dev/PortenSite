@@ -1,0 +1,288 @@
+$bg: #000000;
+$bg-block: #0F0F0F;
+$bg-default: #1F1F1F;
+$text-color: #fff;
+$text-default: #969696;
+
+%hr-line{
+    border-left: 1px solid #333;
+    padding: 0 10px;
+}
+
+body{
+    margin: 0;
+    background: $bg;
+}
+
+*,
+*::hover,
+*::after{
+    box-sizing: border-box;
+}
+
+*p{
+    font-size: 12px;
+    margin: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+.fas.fa-phone{
+    transform: rotate(90deg);
+    color: #969696;
+}
+
+.fas.fa-shopping-cart, .fas.fa-search{
+    color: #fff;
+    padding-left: 50px;
+}
+
+.fas.fa-sign-in-alt{
+    color: #969696;
+}
+.fas.fa-sign-in-alt:hover{
+    color: $text-color;
+    transition: .2s;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+.line-header{
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+}
+
+.faq{
+    display: flex;
+}
+
+.faq__subtitle{
+    display: flex;
+
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+
+    list-style: none;
+}
+
+.faq__txt{
+    @extend %hr-line;
+
+    color: $text-default;
+}
+
+.faq__txt:first-child{
+    border: 0;
+    padding-left: 0;
+}
+
+.authorization{
+    display: flex;
+}
+
+.log-in, .sign-in{
+    padding: 0 25px;
+    text-decoration: none;
+    color: $text-default;
+
+    transition: .2s;
+}
+
+.log-in:hover, .sign-in:hover{
+    color: $text-color;
+    transition: .2s;
+}
+/*
+.hr{
+    margin: 0;
+    border-left: 1px #969696;
+    transform: rotate(15deg);
+
+    border-style: solid;
+}*/
+
+.line{
+    @extend %hr-line;
+
+    margin: 0;
+    padding: 0;
+    
+    transform: rotate(15deg);
+}
+
+.logo__title{
+    color: $text-color;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: $bg-block;
+
+    padding: 25px 100px;
+}
+
+
+.nav__item{
+    padding: 35px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s;
+
+    color: $text-default;
+}
+
+.nav__item:hover{
+    background: $bg-default;
+    color: $text-color;
+    transition: .2s;
+}
+
+
+
+
+
+.footer__info{
+    display: flex;
+
+    padding: 85px 325px;
+
+    background: url('/assets/img/foo__img.png') 
+                center no-repeat;
+}
+
+
+.footer__item-1{
+    flex: 1 1 0;
+    padding-bottom: 75px;
+}
+
+.footer__item-2{
+    flex: 1 1 0;
+    padding: 0 75px;
+}
+
+.footer__item-3{  
+    flex: 1 1 0;
+}
+
+.footer__title{
+    color: $text-color;
+
+    padding-bottom: 50px;
+
+    font-size: 24px;
+}
+
+.footer__subtitle{
+    color: $text-color;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.foo__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foo__item{
+    background: $bg;
+
+    padding: 15px;
+    margin: 10px 15px;
+
+    text-decoration: none;
+    color: $text-color;
+
+    transition: .2s;
+}
+
+.foo__item:hover{
+    background: #fff;
+    color: #000;
+
+    transition: .2s;
+}
+
+.inputs{
+    padding-top: 50px;
+}
+
+.foo__input-text, .foo__input-submit{
+    border: 0;
+    padding: 15px;
+}
+
+.foo__input-submit{
+    position: relative;
+    right: 25px;
+
+    background: $bg;
+    color: $text-color;
+
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.foo__input-submit:hover{
+    background: #fff;
+    color: #000;
+    transition: .2s;
+}
+
+.foo__input-text{
+    background: #ffffff66;
+    outline:none;
+
+    transition: .2s;
+}
+
+.foo__input-text:focus{
+    background: rgb(95 95 95 / 40%);
+    color: #fff;
+    transition: .2s;
+}
+
+.foo__input-text::placeholder{
+    color: #fff;
+}
+
+
+
+
+.line-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer__txt{
+    color: $text-color;
+}
+
+.footer__txt{
+    margin-left: 225px;
+}
+
+.footer__txt:first-child{
+    margin-left: 0;
+    margin-right: 225px;
+}
+
+
